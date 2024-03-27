@@ -163,7 +163,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/13/CKA%E8%80%83%E8%AF%95%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/13/https%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -177,7 +177,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/06/13/CKA%E8%80%83%E8%AF%95%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/" class="post-title-link" itemprop="url">CKA考试心得分享</a>
+            <a href="/2022/06/13/https%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6/" class="post-title-link" itemprop="url">https通信与数字证书</a>
         </h2>
 
         <div class="post-meta">
@@ -187,14 +187,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-06-13 22:21:00" itemprop="dateCreated datePublished" datetime="2022-06-13T22:21:00+08:00">2022-06-13</time>
+              <time title="创建时间：2022-06-13 23:07:11" itemprop="dateCreated datePublished" datetime="2022-06-13T23:07:11+08:00">2022-06-13</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-10-05 12:03:26" itemprop="dateModified" datetime="2022-10-05T12:03:26+08:00">2022-10-05</time>
+                <time title="修改时间：2022-10-05 17:00:08" itemprop="dateModified" datetime="2022-10-05T17:00:08+08:00">2022-10-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -202,7 +202,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/k8s/" itemprop="url" rel="index"><span itemprop="name">k8s</span></a>
+                  <a href="/categories/https/" itemprop="url" rel="index"><span itemprop="name">https</span></a>
                 </span>
             </span>
 
@@ -217,74 +217,45 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
-<p>CKA即Certified Kubernetes Administrator，是由Linux开源基金会主办的kubernetes官方认证。除了CKA，还有CKS、CKAD。题主本人是五一假期的时候考过的，下面是一些心得分享，与君共勉。</p>
+          <h3 id="两种加密算法"><a href="#两种加密算法" class="headerlink" title="两种加密算法"></a>两种加密算法</h3><h4 id="对称加密"><a href="#对称加密" class="headerlink" title="对称加密"></a>对称加密</h4><blockquote>
+<p>对称加密即加密和解密使用相同密钥的加密算法。其特点是</p>
+<ul>
+<li>加密速度快</li>
+<li>加密和解密使用相同的密钥</li>
+</ul>
+<p>常用的对称加密算法有：3DES、AES、SM4</p>
 </blockquote>
-<h3 id="考试购买"><a href="#考试购买" class="headerlink" title="考试购买"></a>考试购买</h3><p>CKA原价是￥2498，购买链接(<a target="_blank" rel="noopener" href="https://training.linuxfoundation.cn/certificate/details/1">Kubernetes 管理员认证 (CKA) (linuxfoundation.cn)</a>)，一般官网会给一个优惠，但是优惠力度非常小。每年的黑色星期五，也就是感恩节第二天开始的一周，会有比较大的优惠。题主是2021年黑色星期五买的，花费了￥1498，如果你不着急报名，可以等黑色星期五优惠时再购买。</p>
-<p>从购买当天算起，一年内须考试通过，否则资格就废弃了。如果第一次没考过，还有一次补考机会，补考过了同样会认证通过。</p>
-<p>考试购买后会附带一份模拟题，模拟题可以练习两次，但是每次练习只给36小时。也就是说，在你开始模拟后，36小时内可以重复模拟多次，但是过了36小时后，入口就关闭了。模拟题难度远大于真题，供参考即可。如果模拟考试时间不够或者不想模拟，可以直接跳转到答案页面，然后ctrl+s将整个页面保存到本地，这样会把题目和答案均保存下来，后续可以离线查看。</p>
-<h3 id="考纲"><a href="#考纲" class="headerlink" title="考纲"></a>考纲</h3><p>考纲可以在这个页面<a target="_blank" rel="noopener" href="https://training.linuxfoundation.cn/certificate/details/1">Kubernetes 管理员认证 (CKA) (linuxfoundation.cn)</a>查看，主要有以下内容。</p>
-<p><strong>集群架构，安装和配置：25%</strong></p>
-<p>• 管理基于角色的访问控制（RBAC）</p>
-<p>• 使用Kubeadm安装基本集群</p>
-<p>• 管理高可用性的Kubernetes集群</p>
-<p>• 设置基础架构以部署Kubernetes集群</p>
-<p>• 使用Kubeadm在Kubernetes集群上执行版本升级</p>
-<p>• 实施etcd备份和还原</p>
-<p><strong>工作负载和调度：15%</strong></p>
-<p>• 了解部署以及如何执行滚动更新和回滚</p>
-<p>• 使用ConfigMaps和Secrets配置应用程序</p>
-<p>• 了解如何扩展应用程序</p>
-<p>• 了解用于创建健壮的、自修复的应用程序部署的原语</p>
-<p>• 了解资源限制如何影响Pod调度</p>
-<p>• 了解清单管理和通用模板工具</p>
-<p><strong>服务和网络：20%</strong></p>
-<p>• 了解集群节点上的主机网络配置</p>
-<p>• 理解Pods之间的连通性</p>
-<p>• 了解ClusterIP、NodePort、LoadBalancer服务类型和端点</p>
-<p>• 了解如何使用入口控制器和入口资源</p>
-<p>• 了解如何配置和使用CoreDNS</p>
-<p>• 选择适当的容器网络接口插件</p>
-<p><strong>存储：10%</strong></p>
-<p>• 了解存储类、持久卷</p>
-<p>• 了解卷模式、访问模式和卷回收策略</p>
-<p>• 理解持久容量声明原语</p>
-<p>• 了解如何配置具有持久性存储的应用程序</p>
-<p><strong>故障排除：30%</strong></p>
-<p>• 评估集群和节点日志</p>
-<p>• 了解如何监视应用程序</p>
-<p>• 管理容器标准输出和标准错误日志</p>
-<p>• 解决应用程序故障</p>
-<p>• 对群集组件故障进行故障排除</p>
-<p>• 排除网络故障</p>
-<h3 id="备考思路"><a href="#备考思路" class="headerlink" title="备考思路"></a>备考思路</h3><p>考试前肯定是尽可能要把所有的考点都学习透彻，这样才不会怯场。</p>
-<p>题主的学习路线如下：</p>
-<h4 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h4><p><a target="_blank" rel="noopener" href="https://www.qikqiak.com/k8s-book/">从 Docker 到 Kubernetes 进阶手册 (qikqiak.com)</a>，阳明的这份博客从docker到k8s讲解很清晰，且上手难度小，跟着练习即可掌握k8s大部分资源对象。</p>
-<p><strong>注：题主不是在打广告，纯分享心得。</strong></p>
-<h4 id="Udemy课程跟练"><a href="#Udemy课程跟练" class="headerlink" title="Udemy课程跟练"></a>Udemy课程跟练</h4><p>之前在知乎上看到有人推荐这个课程，个人感觉比较便宜，就购买了一份。链接<a target="_blank" rel="noopener" href="https://www.udemy.com/share/101Xtg3@TZlPE_RM8e1BpSEgctFWwCYN8-Z034U58ycsRtDQkJDQL94dCs1PZLphoU636FJEqw==/">CKA</a>，Udemy上面经常有打折，题主当时是$14买的，如果你看到价格比较贵，过几天再来看看可能就会有打折。这个课程是全英文教学的，有英文字幕，但是字幕是根据教师的口音自动翻译过来的，经常会有翻译不准的问题，比如Pod翻译成pad等等。总体来说使用的都是简单的词语，CET4过了就没有什么听力障碍。这个课程最大的特点是附带一份随堂练习，每节课后基本上都有一个小练习，和CKA真题难度类似。此外还有一份模拟题，如果模拟题基本都可以真确解答，考试基本上是没问题的。</p>
-<p> <strong>注：题主不是在打广告，纯分享心得。</strong></p>
-<h4 id="书籍参考"><a href="#书籍参考" class="headerlink" title="书籍参考"></a>书籍参考</h4><p>之前公司发了一张购书券，刚好我在学习kubernetes，于是就买了一本马哥的《kubernetes进阶实战》。这本书对新手来说难度较大，如果目前你处于新手阶段，建议仅做参考。</p>
-<h3 id="刷题训练"><a href="#刷题训练" class="headerlink" title="刷题训练"></a>刷题训练</h3><p>题主分享一些题供诸位参考，</p>
-<h4 id="CKA附带模拟题"><a href="#CKA附带模拟题" class="headerlink" title="CKA附带模拟题"></a>CKA附带模拟题</h4><p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1UYelPkS_Mlb0kvK5uwGbVA">https://pan.baidu.com/s/1UYelPkS_Mlb0kvK5uwGbVA</a><br>提取码：tfpl</p>
-<h4 id="与题主本人考试相近的题目"><a href="#与题主本人考试相近的题目" class="headerlink" title="与题主本人考试相近的题目"></a>与题主本人考试相近的题目</h4><p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1l6_kyZDcB1sNnIpJBYIUog">https://pan.baidu.com/s/1l6_kyZDcB1sNnIpJBYIUog</a><br>提取码：g4nn</p>
-<h4 id="其他参考题"><a href="#其他参考题" class="headerlink" title="其他参考题"></a>其他参考题</h4><p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1g-SYdPc6dJJ8YnZ9vu848g">https://pan.baidu.com/s/1g-SYdPc6dJJ8YnZ9vu848g</a><br>提取码：hdpc</p>
-<h4 id="github上一些练习命令"><a href="#github上一些练习命令" class="headerlink" title="github上一些练习命令"></a>github上一些练习命令</h4><p><a target="_blank" rel="noopener" href="https://github.com/dgkanatsios/CKAD-exercises">Github参考练习</a></p>
-<h4 id="其他网站参考练习"><a href="#其他网站参考练习" class="headerlink" title="其他网站参考练习"></a>其他网站参考练习</h4><p><a target="_blank" rel="noopener" href="https://killercoda.com/killer-shell-cka">https://killercoda.com/killer-shell-cka</a></p>
-<h3 id="TIPS"><a href="#TIPS" class="headerlink" title="TIPS"></a>TIPS</h3><p>1、考试需要科学上网，否则考前的环境检查通过不了。</p>
-<p>2、考试一共17道题，不是官网所说的25道题，认真准备的话时间完全充裕。</p>
-<p>3、尽量报考CKA-CN，这样考官也是发送中文信息，看起来较为方便。</p>
-<p>4、准备一张带有英文名字的证件，如护照、港澳台通行证、信用卡等等，<strong>证件上的名字需要与报考时填写的名字一致</strong>。题主考试时使用了一张运通信用卡和身份证。</p>
-<p>5、考前需要准备好摄像头，房间打扫干净，墙壁上不能张贴海报、字画等。</p>
-<p>6、考试时如果哪个题不会写，先用notepad记录一下，这样后面写完了回头看时，就可以直接跳转到对应的题目，不用一个个翻。</p>
-<p>7、复制键是ctrl+insert，粘贴可以点右键选择粘贴也可以shift+insert。</p>
-<p>8、建议将常用的官方文档页面放到固定的收藏夹，这样可以随时跳转过去，节省查找时间。</p>
-<img src="/2022/06/13/CKA%E8%80%83%E8%AF%95%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/k8s收藏夹.PNG" alt="k8s收藏夹" style="zoom:50%;">
+<p><strong>加密过程</strong></p>
+<p>1、Alice使用密钥key将明文加密为密文</p>
+<p>2、密文传输给Bod</p>
+<p>3、Bob获取到密文后，通过密钥key解密后获取明文</p>
+<img src="/2022/06/13/https%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E5%AD%97%E8%AF%81%E4%B9%A6/k8s收藏夹.PNG" alt="k8s收藏夹" style="zoom:50%;">
 
-<p>9、证书为电子证书，如下。</p>
-<img src="/2022/06/13/CKA%E8%80%83%E8%AF%95%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/cka.PNG" alt="cka" style="zoom:50%;">
+<p><strong>存在的风险</strong></p>
+<p>对称加密最大的问题是密钥的安全传输，即如何安全地将密钥由Alice传输给Bob，如果密钥在传输过程中被劫持，则会出现中间人攻击。</p>
+<p><strong>对称加密过程中的中间人攻击</strong></p>
+<p>1、Alice将密钥传输给Bob</p>
+<p>2、密钥传输给过程中，密钥被中间人窃取</p>
+<p>3、Alice将明文通过密钥key加密并发送给Bob</p>
+<p>4、密文传输过程中被中间人劫持</p>
+<p>5、中间人使用窃取到的密钥key将密文解密得到明文</p>
+<p>6、中间人将明文替换</p>
+<p>7、中间人使用窃取到的密钥key将篡改后的明文加密并发送给Bob</p>
+<p>8、Bob收到密文和密钥key后解密得到被篡改后的明文</p>
+<img src="./https通信与数字证书/对称密钥中的中间人攻击.PNG" alt="对称密钥中的中间人攻击" style="zoom:50%;">
 
-<p>10、如有疑问，可以联系我共同探讨哦~QQ：992842818</p>
-
+<h4 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h4><blockquote>
+<p>非对称加密需要两个密钥来进行加密和解密，公开密钥称为公钥，非公开的密钥称为私钥。其特点是</p>
+<ul>
+<li>使用公钥加密后的密文，仅能由对应的私钥解密；使用私钥加密后的密文，仅能由对应的公钥解密。</li>
+<li>非对称加密算法复杂，加解密速度远远低于对称加密算法。</li>
+</ul>
+<p>常用的非对称加密算法有：RSA、SM2</p>
+</blockquote>
+<p><strong>加密过程</strong></p>
+<p><strong>存在的风险</strong></p>
+<p><strong>非对称加密过程中的中间人攻击</strong></p>
+<h3 id="HASH算法"><a href="#HASH算法" class="headerlink" title="HASH算法"></a>HASH算法</h3><h3 id="数字证书"><a href="#数字证书" class="headerlink" title="数字证书"></a>数字证书</h3>
       
     </div>
 
@@ -302,7 +273,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -368,7 +339,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

@@ -163,7 +163,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/12/14/Markdown%E8%AF%AD%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/01/28/python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -177,7 +177,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/12/14/Markdown%E8%AF%AD%E6%B3%95/" class="post-title-link" itemprop="url">Markdown语法</a>
+            <a href="/2024/01/28/python%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">python内置函数</a>
         </h2>
 
         <div class="post-meta">
@@ -186,23 +186,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2023-12-14 21:57:35" itemprop="dateCreated datePublished" datetime="2023-12-14T21:57:35+08:00">2023-12-14</time>
+              <time title="创建时间：2024-01-28 21:10:13 / 修改时间：21:16:37" itemprop="dateCreated datePublished" datetime="2024-01-28T21:10:13+08:00">2024-01-28</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-12-15 20:33:59" itemprop="dateModified" datetime="2023-12-15T20:33:59+08:00">2023-12-15</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
                 </span>
             </span>
 
@@ -217,71 +211,58 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
-
-<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**加粗效果**</span><br><span class="line">*斜体效果**</span><br><span class="line">***斜体加粗***</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
-
-<p><strong>加粗</strong></p>
-<p><em>斜体</em></p>
-<p><em><strong>斜体加粗</strong></em></p>
-<p><del>删除线</del></p>
-<p>引用</p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 引用内容</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这是引用内容</p>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>这也是引用内容</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">三个或三个以上的-或*都可以</span><br></pre></td></tr></table></figure>
-
-<hr>
-<hr>
-<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 &quot;超链接title&quot;)</span><br><span class="line">title可加可不加</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></p>
-<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">无序列表用 - + * 任何一种都可以</span><br><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line">注意：- + * 跟内容之间都要有一个空格</span><br><span class="line"></span><br><span class="line">有序列表</span><br><span class="line">1. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">3. 列表内容</span><br><span class="line">注意：序号跟内容之间要有空格</span><br><span class="line"></span><br><span class="line">列表嵌套</span><br><span class="line">上一级和下一级之间敲三个空格即可</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>列表1</li>
+          <ul>
+<li><strong>filter()</strong></li>
 </ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python高级内置函数</span></span><br><span class="line"><span class="built_in">filter</span>()函数用于过滤序列，过滤掉不符合条件的元素，返回符合条件的元素组成新列表。语法如下</span><br><span class="line"><span class="built_in">filter</span>(function,iterable)</span><br><span class="line">其中function为只接收一个参数的函数，iterable为可迭代序列</span><br><span class="line">实例</span><br><span class="line"><span class="comment"># 过滤0-9的偶数</span></span><br><span class="line">filter_result = <span class="built_in">filter</span>(<span class="keyword">lambda</span> n:n%<span class="number">2</span>==<span class="number">0</span>,[<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>])</span><br><span class="line"><span class="comment"># function作用在每个元素上，若函数返回为True，则加入结果中</span></span><br><span class="line"><span class="comment"># filter()返回为一个filter对象</span></span><br><span class="line"><span class="built_in">list</span>(filter_result) = [<span class="number">0</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 引申1：itertools模块中filterfalse函数与filter函数类似，区别在于filterfalse函数当function返回False时产出结果</span></span><br><span class="line"><span class="comment"># 引申2：itertools模块中takewhile函数，当funtion返回真值时产出对应的元素，然后立即停止，不再继续检查</span></span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>列表2</li>
+<li><strong>map()</strong></li>
 </ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python高级内置函数</span></span><br><span class="line"><span class="built_in">map</span>()是 Python 内置的高阶函数，它接收一个函数 f 和一个 <span class="built_in">list</span>，并通过把函数 f 依次作用在 <span class="built_in">list</span> 的每个元素上，得到一个新的 <span class="built_in">list</span> 并返回。</span><br><span class="line"><span class="built_in">map</span>(funciton,iterable)</span><br><span class="line">其中function为只接收一个参数的函数，iterable为可迭代序列</span><br><span class="line">实例</span><br><span class="line">map_result = <span class="built_in">map</span>(<span class="keyword">lambda</span> n:n*<span class="number">2</span>,(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>))</span><br><span class="line"><span class="comment"># function作用在每个元素上，并返回结果</span></span><br><span class="line"><span class="comment"># map()返回一个map对象</span></span><br><span class="line"><span class="built_in">list</span>(map_result) = [<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 引申：itertools模块中的accumulate函数，accumulate(it, [func])，产出累积的总和；如果提供了func，那么把前两个元素传给它，然后把计算结果和下一个元素传给它，以此类推，最后产出结果。</span></span><br><span class="line"><span class="comment"># 引申2：itertools模块中的starmap函数，starmap(func, it),把it中的各个元素传给func，产出结果；输入的可迭代对象应该产出可迭代对象iit，然后以func(*iit)这种形式调用func</span></span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>列表3</li>
+<li><strong>reduce()</strong></li>
 </ul>
-<ol>
-<li>列表1</li>
-<li>列表1</li>
-<li>列表1</li>
-</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python3中reduce不是内置函数，使用时需要从functools中导入</span></span><br><span class="line"><span class="comment"># from functools import reduce</span></span><br><span class="line">reduce的工作过程是 ：在迭代sequence(<span class="built_in">tuple</span> ，<span class="built_in">list</span> ，dictionary， string等可迭代物)的过程中，首先把 前两个元素传给 函数参数，函数加工后，然后把得到的结果和第三个元素作为两个参数传给函数参数， 函数加工后得到的结果又和第四个元素作为两个参数传给函数参数，依次类推。 如果传入了 initial 值， 那么首先传的就不是 sequence 的第一个和第二个元素，而是 initial值和 第一个元素。经过这样的累计计算之后合并序列到一个单一返回值</span><br><span class="line">reduce(function, sequence[,initial])</span><br><span class="line"></span><br><span class="line">实例（不传入initial值）</span><br><span class="line">reduce_result1 = reduce(<span class="keyword">lambda</span> a,b:a+b, [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>])</span><br><span class="line">reduce_result1 = <span class="number">10</span></span><br><span class="line"></span><br><span class="line">实例（传入initial为<span class="number">3</span>）</span><br><span class="line">reduce_result2 = reduce(<span class="keyword">lambda</span> a,b:a+b, [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>], <span class="number">3</span>)</span><br><span class="line">reduce_result2 = <span class="number">13</span></span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>层级1<ul>
-<li>层级2</li>
-<li>层级2<ul>
-<li>层级3</li>
+<li><strong>zip()</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># zip是python3中内置高级函数，表达式zip(it, ..., itN)</span></span><br><span class="line"><span class="comment"># 并行从输入的各个可迭代对象中获取元素，产出由N个元素组成的元组，只要有一个可迭代对象到头了，就默默停止。</span></span><br><span class="line">lst1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">z1 = <span class="built_in">zip</span>(lst1)</span><br><span class="line"><span class="built_in">print</span>(z1) <span class="comment"># &lt;zip object at 0x000001745B93EF80&gt;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(z1)) <span class="comment"># [(1,), (2,), (3,)]</span></span><br><span class="line">lst2 = [<span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">z2 = <span class="built_in">zip</span>(lst1,lst2)</span><br><span class="line">result = ((x, y) <span class="keyword">for</span> x, y <span class="keyword">in</span> z2)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(result)) <span class="comment"># [(1, 2), (2, 3)]</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>归约函数</strong></p>
+<ul>
+<li>all(it) ：it中的所有元素都为真值时返回True，否则返回False，all([])返回True</li>
+<li>any(it) ：只要it中有元素为真值就返回True，否则返回False，any([])返回False</li>
+<li>max(it, [key&#x3D;,] [default&#x3D;]) ：返回it中值最大的元素，key是排序函数，与sorted函数一样；如果可迭代对象为空，返回default</li>
+<li>min(it, [key&#x3D;,] [default&#x3D;]) ：返回it中值最小的元素，key是排序函数，与sorted函数一样；如果可迭代对象为空，返回default</li>
+<li>functiontools.reduce，如上述。</li>
+<li>sum(it, start&#x3D;0)：it中所有元素的综合，如果提供可选的start，会把它加上（计算浮点数的加法时，可以使用math.fsum函数提高精度）</li>
+</ul>
+</li>
+<li><p><strong>iter()特殊用法</strong>：iter(obj, sentinel)，传入两个参数，使用常规的函数或任何可调用的对象创建迭代器。其中obj必须是可调用的对象，用于不断调用（没有参数），产出各个值，比如range(3)；sentinel是哨兵，是一个标记值，当可调用对象返回这个值时，触发迭代器抛出StopIteration异常，而不产出哨兵的值。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 实例1：</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">d6</span>():</span><br><span class="line">    <span class="keyword">return</span> randint(<span class="number">1</span>, <span class="number">6</span>) <span class="comment"># 随机产生1-6</span></span><br><span class="line">d6_iter = <span class="built_in">iter</span>(d6, <span class="number">3</span>) <span class="comment"># 返回一个迭代器</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> d6_iter:</span><br><span class="line">    <span class="built_in">print</span>(i) <span class="comment"># 不断产生值，当产出的值为3的时候停止</span></span><br><span class="line"><span class="comment"># 实例2：逐行读取文件，直到遇到空行或者到达文件的末尾为止</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> <span class="built_in">iter</span>(fp.readline, <span class="string">&#x27;\n&#x27;</span>):</span><br><span class="line">        process_line(line)</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p><strong>list.sort和sorted</strong></p>
+<ul>
+<li><p>list.sort会就地排序列表，即对原列表直接排序，不会把原列表复制一份，这个方法返回None</p>
+</li>
+<li><p>内置函数sorted会新建一个列表作为返回值，sorted可以接受任何形式的可迭代对象作为参数，甚至包括不可表序列或生成器。不管sorted接受什么样的参数，都会返回一个列表。</p>
+</li>
+<li><p>list.sort和sorted两个可选的关键字参数</p>
+<ul>
+<li><p>reverse，如果被设定为True，则降序输出，默认为False</p>
+</li>
+<li><p>key，一个只有一个参数的函数，这个函数会作用在序列里的每一个元素上，所产出的结果作为排序算法依赖的关键字，默认是恒等函数，即默认使用元素自己的值进行排序</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">list1 = [<span class="string">&#x27;banana&#x27;</span>, <span class="string">&#x27;apple&#x27;</span>, <span class="string">&#x27;pear&#x27;</span>]</span><br><span class="line">list2 = <span class="built_in">sorted</span>(list1, key=<span class="built_in">len</span>)        <span class="comment"># 将会以元素的长度作为关键字进行排序</span></span><br><span class="line"><span class="built_in">print</span>(list2)                          <span class="comment"># [&#x27;pear&#x27;, &#x27;apple&#x27;, &#x27;banana&#x27;]</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|---:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line">第二行分割表头和内容。</span><br><span class="line">- 有一个就行，为了对齐，多加了几个</span><br><span class="line">文字默认居左</span><br><span class="line">-两边加：表示文字居中</span><br><span class="line">-右边加：表示文字居右</span><br><span class="line">注：原生的语法两边都要用 | 包起来。此处省略</span><br></pre></td></tr></table></figure>
-
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">单行代码：代码之间分别用一个反引号包起来</span><br><span class="line">代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</span><br></pre></td></tr></table></figure>
-
-<p><code>这是代码</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这是代码块</span><br><span class="line">这是代码快</span><br></pre></td></tr></table></figure>
-
-
-
 
       
     </div>
@@ -300,7 +281,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -366,7 +347,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
