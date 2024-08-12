@@ -163,7 +163,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/12/14/Markdown%E8%AF%AD%E6%B3%95/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/27/python%E9%97%AD%E5%8C%85/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -177,7 +177,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/12/14/Markdown%E8%AF%AD%E6%B3%95/" class="post-title-link" itemprop="url">Markdown语法</a>
+            <a href="/2024/03/27/python%E9%97%AD%E5%8C%85/" class="post-title-link" itemprop="url">python闭包</a>
         </h2>
 
         <div class="post-meta">
@@ -187,14 +187,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2023-12-14 21:57:35" itemprop="dateCreated datePublished" datetime="2023-12-14T21:57:35+08:00">2023-12-14</time>
+              <time title="创建时间：2024-03-27 21:15:50" itemprop="dateCreated datePublished" datetime="2024-03-27T21:15:50+08:00">2024-03-27</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-12-15 20:33:59" itemprop="dateModified" datetime="2023-12-15T20:33:59+08:00">2023-12-15</time>
+                <time title="修改时间：2024-03-28 19:07:09" itemprop="dateModified" datetime="2024-03-28T19:07:09+08:00">2024-03-28</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -202,7 +202,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
                 </span>
             </span>
 
@@ -217,72 +217,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
-
-<h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**加粗效果**</span><br><span class="line">*斜体效果**</span><br><span class="line">***斜体加粗***</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
-
-<p><strong>加粗</strong></p>
-<p><em>斜体</em></p>
-<p><em><strong>斜体加粗</strong></em></p>
-<p><del>删除线</del></p>
-<p>引用</p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 引用内容</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>这是引用内容</p>
+          <blockquote>
+<p>闭包（Closure）是一种在函数内部定义的函数，并且该内部函数可以访问外部函数的局部变量。这样的内部函数被称为闭包，因为它“封闭”了外部函数的环境，包含了外部函数的变量。<br>闭包有很多优点，例如：<br>1、可以避免使用全局变量，提高程序的可维护性；<br>2、可以实现类似于私有变量的功能，提高程序的安全性；<br>3、可以实现延迟执行和缓存结果，提高程序的性能。<br>但是，闭包也有一些缺点，例如：<br>1、可能会占用较多的内存空间，因为闭包会保留外部函数的状态；<br>2、可能会导致循环引用的问题，如果闭包中引用了外部函数的变量，而这些变量又引用了闭包中的变量，就会出现循环引用的问题。</p>
 </blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>这也是引用内容</p>
+<h3 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h3><blockquote>
+<p>装饰器本质上是一个函数，它接受一个函数作为参数，并返回一个新的函数，通常在其中包含对原始函数的修改。</p>
 </blockquote>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 通过装饰器 add_func_runtime扩展原来函数的功能，使得原来的add函数能够计算执行时间</span></span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">add_func_runtime</span>(<span class="params">func</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">wrapper</span>(<span class="params">*args, **kwargs</span>):</span><br><span class="line">        start_time = datetime.datetime.now()</span><br><span class="line">        func(*args, *kwargs)</span><br><span class="line">        end_time = datetime.datetime.now()</span><br><span class="line">        runtime = end_time-start_time</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;Func:<span class="subst">&#123;func.__name__&#125;</span> cost time:&quot;</span>+<span class="built_in">str</span>(runtime))</span><br><span class="line">        <span class="keyword">return</span> func</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@add_func_runtime</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">x, y</span>):</span><br><span class="line">    <span class="keyword">return</span> x+y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    add(<span class="number">1</span>, <span class="number">2</span>) <span class="comment"># Func:add cost time:0:00:00</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>functools.wraps 是functools模块中自带的一个装饰器，可用于装饰器的内层函数, 抵消装饰器的副作用, 因为使用装饰器后, 原函数被内层函数赋值覆盖, 函数名称等信息丢失了(装饰器仅仅是不改变函数原有功能)，示例如下：</p>
 </blockquote>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">import</span> functools</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">use_functools</span>(<span class="params">func</span>):</span><br><span class="line"><span class="meta">    @functools.wraps(<span class="params">func</span>)</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">wrapper</span>(<span class="params">*args, **kwargs</span>)：</span><br><span class="line">        <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">        wrapper</span></span><br><span class="line"><span class="string">        &#x27;&#x27;&#x27;</span></span><br><span class="line">        func(*args, **kwargs)</span><br><span class="line">        <span class="keyword">return</span> func</span><br><span class="line">    <span class="keyword">return</span> wrapper</span><br><span class="line"></span><br><span class="line"><span class="meta">@use_functools</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">minux</span>(<span class="params">x, y</span>):</span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    minux</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> x-y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;Func Doc:<span class="subst">&#123;minux.__doc__&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="comment"># 若注释掉@functools.wraps(func)，则展示为Func Doc:wrapper</span></span><br><span class="line">    <span class="comment"># 若不注释，则展示为Func Doc:minux</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;Func Name:<span class="subst">&#123;minux.__name__&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="comment"># 若注释掉@functools.wraps(func)，则展示为Func Name:wrapper</span></span><br><span class="line">    <span class="comment"># 若不注释，则展示为Func Name:minux</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="工厂函数"><a href="#工厂函数" class="headerlink" title="工厂函数"></a>工厂函数</h3><blockquote>
+<p>由于闭包的外部函数返回的是内部函数，根据此特性可以实现工厂函数，生成不同类型的函数。一般来说，实现数值的2次方，可以定义一个函数，返回参数的2次方即可。当我们需要实现不同场景的幂函数，可以s使用闭包返回一个工厂函数，这样就不用定义n个幂函数了，如下。</p>
 </blockquote>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">power_of_n</span>(<span class="params">n</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">inner</span>(<span class="params">x</span>):</span><br><span class="line">        <span class="keyword">return</span> x ** n</span><br><span class="line">    <span class="keyword">return</span> inner</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    power_of_2 = power_of_n(<span class="number">2</span>)</span><br><span class="line">    <span class="built_in">print</span>(power_of_2(<span class="number">3</span>)) <span class="comment"># 9</span></span><br><span class="line">    power_of_3 = power_of_n(<span class="number">3</span>)</span><br><span class="line">    <span class="built_in">print</span>(power_of_3(<span class="number">3</span>)) <span class="comment"># 27</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="实现缓存"><a href="#实现缓存" class="headerlink" title="实现缓存"></a>实现缓存</h3><blockquote>
+<p>由于闭包具有能够保留外层函数的局部变量到内存中的特性，因此可以使用该特性将一些比较重要的数据临时保存到缓存中，避免重复计算，但要加强内存的管理，避免内存泄漏。</p>
 </blockquote>
-<h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">三个或三个以上的-或*都可以</span><br></pre></td></tr></table></figure>
-
-<hr>
-<hr>
-<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 &quot;超链接title&quot;)</span><br><span class="line">title可加可不加</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a></p>
-<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">无序列表用 - + * 任何一种都可以</span><br><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line">注意：- + * 跟内容之间都要有一个空格</span><br><span class="line"></span><br><span class="line">有序列表</span><br><span class="line">1. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">3. 列表内容</span><br><span class="line">注意：序号跟内容之间要有空格</span><br><span class="line"></span><br><span class="line">列表嵌套</span><br><span class="line">上一级和下一级之间敲三个空格即可</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>列表1</li>
-</ul>
-<ul>
-<li>列表2</li>
-</ul>
-<ul>
-<li>列表3</li>
-</ul>
-<ol>
-<li>列表1</li>
-<li>列表1</li>
-<li>列表1</li>
-</ol>
-<ul>
-<li>层级1<ul>
-<li>层级2</li>
-<li>层级2<ul>
-<li>层级3</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|---:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line">第二行分割表头和内容。</span><br><span class="line">- 有一个就行，为了对齐，多加了几个</span><br><span class="line">文字默认居左</span><br><span class="line">-两边加：表示文字居中</span><br><span class="line">-右边加：表示文字居右</span><br><span class="line">注：原生的语法两边都要用 | 包起来。此处省略</span><br></pre></td></tr></table></figure>
-
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">单行代码：代码之间分别用一个反引号包起来</span><br><span class="line">代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</span><br></pre></td></tr></table></figure>
-
-<p><code>这是代码</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这是代码块</span><br><span class="line">这是代码快</span><br></pre></td></tr></table></figure>
-
-
-
-
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">cache</span>():</span><br><span class="line">    data = &#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get</span>(<span class="params">key</span>):</span><br><span class="line">        <span class="keyword">return</span> data[key]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">set</span>(<span class="params">key, value</span>):</span><br><span class="line">        data[key] = value</span><br><span class="line">    <span class="keyword">return</span> get, <span class="built_in">set</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    get_item, set_item = cache()</span><br><span class="line">    set_item(<span class="string">&#x27;a&#x27;</span>, <span class="number">1</span>)</span><br><span class="line">    <span class="built_in">print</span>(get_item(<span class="string">&#x27;a&#x27;</span>)) <span class="comment"># 1</span></span><br><span class="line">    set_item(<span class="string">&#x27;b&#x27;</span>, <span class="number">2</span>)</span><br><span class="line">    <span class="built_in">print</span>(get_item(<span class="string">&#x27;b&#x27;</span>)) <span class="comment"># 2</span></span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -300,7 +255,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -366,7 +321,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

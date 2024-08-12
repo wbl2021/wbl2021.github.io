@@ -20,30 +20,33 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="晚来天欲雪，能饮一杯无？">
-<meta property="og:type" content="website">
-<meta property="og:title" content="红色蒲公英">
-<meta property="og:url" content="http://example.com/page/2/index.html">
+  <meta name="description" content="列表 列表由一系列按特定顺序排列的元素组成。在python中，用方括号[]来表示列表，并用逗号来分割其中的元素。  列表有如下函数可以使用，可以通过dir(list)查看所有的函数：    方法 描述    append(x) 在列表末尾添加元素x   clear() 移除列表中的所有元素   copy() 复制列表，浅复制   count(x) 返回在值为x的元素个数   extend(iter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python列表、字典、元组和集合">
+<meta property="og:url" content="http://example.com/2024/08/12/Python%E5%88%97%E8%A1%A8%E3%80%81%E5%AD%97%E5%85%B8%E5%92%8C%E5%85%83%E7%BB%84/index.html">
 <meta property="og:site_name" content="红色蒲公英">
-<meta property="og:description" content="晚来天欲雪，能饮一杯无？">
+<meta property="og:description" content="列表 列表由一系列按特定顺序排列的元素组成。在python中，用方括号[]来表示列表，并用逗号来分割其中的元素。  列表有如下函数可以使用，可以通过dir(list)查看所有的函数：    方法 描述    append(x) 在列表末尾添加元素x   clear() 移除列表中的所有元素   copy() 复制列表，浅复制   count(x) 返回在值为x的元素个数   extend(iter">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-08-12T12:42:02.000Z">
+<meta property="article:modified_time" content="2024-08-12T13:33:09.970Z">
 <meta property="article:author" content="红色蒲公英">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/page/2/">
+<link rel="canonical" href="http://example.com/2024/08/12/Python%E5%88%97%E8%A1%A8%E3%80%81%E5%AD%97%E5%85%B8%E5%92%8C%E5%85%83%E7%BB%84/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>红色蒲公英</title>
+  <title>Python列表、字典、元组和集合 | 红色蒲公英</title>
   
 
 
@@ -157,9 +160,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -175,10 +179,9 @@
       <meta itemprop="name" content="红色蒲公英">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/12/Python%E5%88%97%E8%A1%A8%E3%80%81%E5%AD%97%E5%85%B8%E5%92%8C%E5%85%83%E7%BB%84/" class="post-title-link" itemprop="url">Python列表、字典、元组和集合</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Python列表、字典、元组和集合
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -211,7 +214,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><blockquote>
+        <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><blockquote>
 <p>列表由一系列按特定顺序排列的元素组成。在python中，用方括号[]来表示列表，并用逗号来分割其中的元素。</p>
 </blockquote>
 <p>列表有如下函数可以使用，可以通过<code>dir(list)</code>查看所有的函数：</p>
@@ -389,25 +392,38 @@
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> namedtuple</span><br><span class="line"></span><br><span class="line">Rectangle = namedtuple(<span class="string">&quot;Rectangle&quot;</span>, [<span class="string">&#x27;width&#x27;</span>, <span class="string">&#x27;length&#x27;</span>], defaults=[<span class="number">1</span>, <span class="number">2</span>])</span><br><span class="line">r1 = Rectangle(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"><span class="built_in">print</span>(r1.width) <span class="comment"># 3</span></span><br><span class="line"><span class="built_in">print</span>(r1.ge)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从可迭代对象构造元组</span></span><br><span class="line">r2 = Rectangle._make((<span class="number">5</span>, <span class="number">4</span>))</span><br><span class="line"><span class="built_in">print</span>(r2) <span class="comment"># Rectangle(width=5, length=4)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取具名元组中各个字段</span></span><br><span class="line"><span class="built_in">print</span>(r1._fields) <span class="comment"># (&#x27;width&#x27;, &#x27;length&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将字典转换为具名元组</span></span><br><span class="line">dict1 = &#123;<span class="string">&#x27;width&#x27;</span>:<span class="number">1</span>, <span class="string">&#x27;length&#x27;</span>:<span class="number">2</span>&#125;</span><br><span class="line">nc = Rectangle(**dict1)</span><br><span class="line"><span class="built_in">print</span>(nc) <span class="comment"># Rectangle(width=1, length=2)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将具名元组转换为字典</span></span><br><span class="line">dict2 = r1._asdict()</span><br><span class="line"><span class="built_in">print</span>(dict2) <span class="comment">#  &#123;&#x27;width&#x27;: 1, &#x27;length&#x27;: 2&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将具名元组转换为元组</span></span><br><span class="line">t = <span class="built_in">tuple</span>(r1)</span><br><span class="line"><span class="built_in">print</span>(t)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2>
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          
+          <div class="post-tags">
+              <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/03/27/python%E9%97%AD%E5%8C%85/" rel="prev" title="python闭包">
+      <i class="fa fa-chevron-left"></i> python闭包
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2024/08/12/Python%E4%B8%AD%E7%94%9F%E6%88%90%E5%99%A8%E3%80%81%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E5%8F%AF%E8%BF%AD%E4%BB%A3%E5%AF%B9%E8%B1%A1/" rel="next" title="Python中生成器、迭代器和可迭代对象">
+      Python中生成器、迭代器和可迭代对象 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
+    
   </article>
   
   
   
-
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
 
 
 
@@ -459,6 +475,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="nav-number">1.1.</span> <span class="nav-text">列表的创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sort%E5%92%8Csorted%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.2.</span> <span class="nav-text">sort和sorted的区别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E7%9A%84%E5%88%87%E7%89%87"><span class="nav-number">2.</span> <span class="nav-text">列表的切片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC"><span class="nav-number">3.</span> <span class="nav-text">列表推导</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E5%85%B8"><span class="nav-number"></span> <span class="nav-text">字典</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hashable"><span class="nav-number">1.</span> <span class="nav-text">Hashable</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E5%85%B8%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="nav-number">2.</span> <span class="nav-text">字典的创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E5%85%B8%E7%9A%84%E6%8E%A8%E5%AF%BC"><span class="nav-number">3.</span> <span class="nav-text">字典的推导</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%83%E7%BB%84"><span class="nav-number"></span> <span class="nav-text">元组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%83%E7%BB%84%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="nav-number">1.</span> <span class="nav-text">元组的基本操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B7%E5%90%8D%E5%85%83%E7%BB%84"><span class="nav-number">2.</span> <span class="nav-text">具名元组</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%86%E5%90%88"><span class="nav-number"></span> <span class="nav-text">集合</span></a></div>
       </div>
       <!--/noindex-->
 
